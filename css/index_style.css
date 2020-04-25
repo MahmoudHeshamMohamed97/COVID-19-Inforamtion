@@ -1,0 +1,85 @@
+body{
+    background-image: url('../images/coronavirus-in-red-background.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(155, 0, 255, 0.7);
+}
+.navbar-brand{
+    width: 150px;
+}
+.navbar-brand img{
+    border-radius: 50%;
+}
+.title h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.title h1 span{
+    color: rgb(167, 6, 6);
+}
+/*********************************************************************************************/
+.eachCountry{
+    background-image: url('../images/covid19-coronavirus-infection-spreading-pandemic-background-design_1017-24447.jpg');
+    background-size: 100% 100%;
+    transition: 0.5s all;
+}
+.eachCountry:hover{
+    border-radius: 10rem;
+}
+.data{
+    margin-top: 150px;
+}
+.dateAndTime h1{
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+#globalData h1{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+#globalData span{
+    color: #ff5733;
+    box-shadow: 0 0 55px fuchsia;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+#globalData span::selection{
+    background-color: black;
+}
+.countryName h4{
+    color: darkblue;
+    font-weight: bold;
+}
+.countrysData h5{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+.countrysData h6{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    color: darkblue;
+    box-shadow: 0 0 55px black;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s all;
+}
+.countrysData h6:hover{
+    background-color: #ff5733;
+}

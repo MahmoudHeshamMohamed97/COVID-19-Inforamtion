@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/index_style.css" />
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-expand-sm w-100 navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/istockphoto-1205872351-612x612.jpg" class="img-fluid" />
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="w-50 m-auto text-center title">
+                <h1>COVID-<span>19</span> Information</h1>
+            </div>
+        </nav>
+
+        <div class="container data py-5">
+
+            <div class="row">
+                <div class="col">
+                    <div class="dateAndTime text-center w-50 m-auto">
+                        <h1></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center my-5" id="globalData">
+
+            </div>
+
+            <div class="row my-5">
+                <div class="col">
+                    <div class="form-group">
+                        <input type="text" id="searchTxt" placeholder="Country Name ( Ex: England )" class="form-control" />
+                        <div class="alert alert-danger d-none" id="allert" >Please Enter country name only</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" id="dataToShow">
+                
+            </div>
+            <div class="text-center mt-3">
+                <button class="btn btn-light d-none" id="loadBtn">Load more..</button>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.4.1.js" ></script>
+        <script src="js/popper.min.js" ></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <script src="js/index.js" ></script>
+    </body>
+</html>
