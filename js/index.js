@@ -44,7 +44,7 @@ function displayGlobal(list) {
                     <h1>Total Deaths<br/><span>`+ list.TotalDeaths + `</span></h1>
                 </div>
                 <div class="col-lg-4 col-md-6 p-2">
-                    <h1>Tota Recovered<br/><span>`+ list.TotalRecovered + `</span></h1>
+                    <h1>Total Recovered<br/><span>`+ list.TotalRecovered + `</span></h1>
                 </div>`;
 
     globalData.innerHTML = html;
@@ -118,14 +118,14 @@ btn.addEventListener("click",function(){
 /*********************************************************************/
 var searchTxt = document.getElementById("searchTxt");
 var alertMessage = document.getElementById("allert");
-var searchRegEx = /^[a-z]{1,99}$/;
+var searchRegEx = /^[A-Z][a-z]{1,99}$/;
 searchTxt.addEventListener("keyup",function(){
     if( searchRegEx.test(searchTxt.value) ){
         alertMessage.classList.add("d-none");
         btn.classList.add("d-none");
         var html = "";
         for(let i=0; i<countries.length; i++){
-            if( (countries[i].Country.toLowerCase()).includes(searchTxt.value) ){
+            if( (countries[i].Country.toLowerCase()).includes(searchTxt.value.toLowerCase()) ){
 
                 html += `<div class="col-lg-4 col-md-6 p-3">
                     <div class="eachCountry py-5">
