@@ -1,5 +1,5 @@
 body{
-    background-image: url('../images/coronavirus-in-red-background.jpg');
+    background-image: url('../images/Getty-Images-1203437982-cor.jpg');
     background-size: 100% 100%;
     width: 100%;
     background-attachment: fixed;
@@ -30,32 +30,40 @@ body{
 }
 /*********************************************************************************************/
 .eachCountry{
-    background-image: url('../images/covid19-coronavirus-infection-spreading-pandemic-background-design_1017-24447.jpg');
+    background-image: url('../images/1a376503-851d-4e48-a497-304b89b89ff7.jpg');
     background-size: 100% 100%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
     transition: 0.5s all;
 }
 .eachCountry:hover{
-    border-radius: 10rem;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .data{
     margin-top: 150px;
 }
 .dateAndTime h1{
-    color: fuchsia;
+    color: white;
+    text-shadow: 4px 4px rgb(102, 101, 101);
     font-weight: bold;
     font-size: 3.5rem;
 }
 #globalData h1{
     color: white;
+    text-shadow: 4px 4px black ;
     font-weight: bold;
     font-size: 3rem;
 }
 #globalData span{
-    color: #ff5733;
-    box-shadow: 0 0 55px fuchsia;
+    color: red;
+    text-shadow: 1.5px 1.5px black ;
+    box-shadow: 0 0 45px white;
     font-weight: bold;
-    padding: 10px;
-    border-radius: 50%;
+    padding: 5px;
+    border-radius: 10rem;
     font-size: 2.5rem;
 }
 #globalData span::selection{
@@ -76,10 +84,12 @@ body{
     margin-top: 10px;
     color: darkblue;
     box-shadow: 0 0 55px black;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     font-weight: bold;
     padding: 10px;
     transition: 0.3s all;
 }
 .countrysData h6:hover{
-    background-color: #ff5733;
+    background-color: #CF2E3B;
 }

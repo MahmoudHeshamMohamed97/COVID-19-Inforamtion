@@ -3,7 +3,7 @@ var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 function getDateAndTime() {
     var d = new Date();
     dateAndTime.innerHTML = d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds() + "<br/>"
-        + "Today is " + weekDays[d.getDay()];
+        + weekDays[d.getDay()];
     setTimeout(getDateAndTime, 1000);
 }
 getDateAndTime();
