@@ -1,5 +1,5 @@
 body{
-    background-image: url('../images/Getty-Images-1203437982-cor.jpg');
+    background-image: url('../images/Covid19.jpg');
     background-size: 100% 100%;
     width: 100%;
     background-attachment: fixed;
@@ -12,7 +12,7 @@ body{
     left: 0;
     top: 0;
     z-index: 99;
-    background-color: rgba(155, 0, 255, 0.7);
+    background-color: rgba(155, 0, 255, 0.3);
 }
 .navbar-brand{
     width: 150px;
@@ -30,7 +30,7 @@ body{
 }
 /*********************************************************************************************/
 .eachCountry{
-    background-image: url('../images/1a376503-851d-4e48-a497-304b89b89ff7.jpg');
+    background-image: url('../images/94be9243-7538-4efb-959e-f9a534a5f5a1.jpg');
     background-size: 100% 100%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
@@ -47,7 +47,7 @@ body{
 }
 .dateAndTime h1{
     color: white;
-    text-shadow: 4px 4px rgb(102, 101, 101);
+    text-shadow: 4px 4px #000036;
     font-weight: bold;
     font-size: 3.5rem;
 }
@@ -70,19 +70,22 @@ body{
     background-color: black;
 }
 .countryName h4{
-    color: darkblue;
+    color: red;
+    text-shadow: 2px 2px black;
     font-weight: bold;
 }
 .countrysData h5{
-    color: black;
-    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px darkblue;
+    font-weight: bolder;
     font-size: 13px;
 }
 .countrysData h6{
     margin: auto;
     text-align: center;
     margin-top: 10px;
-    color: darkblue;
+    color: white;
+    text-shadow: 2px 2px black;
     box-shadow: 0 0 55px black;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
@@ -91,5 +94,5 @@ body{
     transition: 0.3s all;
 }
 .countrysData h6:hover{
-    background-color: #CF2E3B;
+    background-color: red;
 }

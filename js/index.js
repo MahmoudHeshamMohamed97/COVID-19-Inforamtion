@@ -2,7 +2,15 @@ var dateAndTime = document.querySelector(".dateAndTime h1");
 var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 function getDateAndTime() {
     var d = new Date();
-    dateAndTime.innerHTML = d.getHours() + " : " + d.getMinutes() + " : " + d.getSeconds() + "<br/>"
+    var hours = d.getHours();
+    var minutes = d.getMinutes();
+    if(d.getMinutes() < 10)   minutes = "0" + d.getMinutes();
+    if( Number( d.getHours() ) > 12){
+        hours = Number(d.getHours()) - 12;
+        if(hours < 10)
+            hours = "0" + hours;
+    }
+    dateAndTime.innerHTML = hours + " : " + minutes + " : " + d.getSeconds() + "<br/>"
         + weekDays[d.getDay()];
     setTimeout(getDateAndTime, 1000);
 }
